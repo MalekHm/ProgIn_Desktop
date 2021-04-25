@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="736.0" prefWidth="1219.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.promotion.AjoutPromotionController">
+   <children>
+      <Button layoutX="838.0" layoutY="678.0" mnemonicParsing="false" onAction="#SavePromotion" opacity="0.89" prefHeight="31.0" prefWidth="295.0" style="-fx-background-color: green;" text="Enregistrer" textFill="WHITE" />
+      <Label layoutX="313.0" layoutY="176.0" prefHeight="21.0" prefWidth="110.0" text="Description" />
+      <TextArea fx:id="tfDescription" layoutX="423.0" layoutY="176.0" prefHeight="151.0" prefWidth="701.0" />
+      <ComboBox fx:id="cbproduct" layoutX="885.0" layoutY="106.0" prefHeight="31.0" prefWidth="188.0" />
+      <Label layoutX="771.0" layoutY="111.0" text="Produit" />
+      <DatePicker fx:id="datepickerfrom" layoutX="418.0" layoutY="397.0" prefHeight="31.0" prefWidth="269.0" />
+      <DatePicker fx:id="datepickerto" layoutX="824.0" layoutY="397.0" prefHeight="31.0" prefWidth="269.0" />
+      <Label layoutX="314.0" layoutY="402.0" text="From" />
+      <Label layoutX="757.0" layoutY="402.0" text="To" />
+      <Label fx:id="ltitre" layoutX="308.0" layoutY="24.0" prefHeight="49.0" prefWidth="498.0" text="Ajouter une nouvelle promotion">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <VBox alignment="TOP_CENTER" layoutY="6.0" prefHeight="716.0" prefWidth="200.0" style="-fx-background-color: white;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#showPublicity" prefHeight="42.0" prefWidth="186.0" text="Publicités" />
+            <Label />
+            <Button mnemonicParsing="false" onAction="#showPromotion" prefHeight="42.0" prefWidth="186.0" text="Promotions" textAlignment="CENTER" />
+         </children>
+      </VBox>
+      <ComboBox fx:id="cbevent" layoutX="429.0" layoutY="106.0" prefHeight="31.0" prefWidth="188.0" />
+      <Label layoutX="314.0" layoutY="111.0" text="Evenement" />
+      <TextField fx:id="tfpourcentage" layoutX="418.0" layoutY="453.0" prefHeight="31.0" prefWidth="45.0" />
+      <Label layoutX="314.0" layoutY="458.0" text="Pourcentage" />
+      <Label layoutX="466.0" layoutY="458.0" text="\%" />
+   </children>
+</AnchorPane>
