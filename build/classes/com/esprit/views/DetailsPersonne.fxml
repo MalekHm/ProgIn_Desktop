@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.DetailsPersonneController">
+   <children>
+      <Label fx:id="lbNom" alignment="CENTER" contentDisplay="CENTER" layoutX="145.0" layoutY="166.0" prefHeight="17.0" prefWidth="310.0" text="Label" textAlignment="CENTER" />
+      <Label fx:id="lbPrenom" alignment="CENTER" contentDisplay="CENTER" layoutX="145.0" layoutY="218.0" prefHeight="17.0" prefWidth="310.0" text="Label" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
