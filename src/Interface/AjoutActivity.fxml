@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="553.0" prefWidth="737.0" style="-fx-background-color: #F6DDCC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interface.AjoutActivityController">
+   <children>
+      <VBox layoutX="1.0" layoutY="27.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="27.0" layoutY="203.0" prefHeight="200.0" prefWidth="194.0" spacing="8.0">
+         <children>
+            <TextField fx:id="tfId" prefHeight="7.0" prefWidth="100.0" promptText="Id" />
+            <TextField fx:id="tfTitleActivity" layoutX="10.0" layoutY="10.0" promptText="Titre activité" />
+            <TextField fx:id="tfAdressActivity" layoutX="10.0" layoutY="35.0" promptText="Adresse" />
+            <TextField fx:id="tfDescriptionActivity" layoutX="10.0" layoutY="60.0" promptText="Description" />
+            <TextField fx:id="tfPriceActivity" layoutX="10.0" layoutY="85.0" promptText="Prix" />
+            <ComboBox fx:id="cbcategory" prefHeight="25.0" prefWidth="203.0" promptText="Categories" />
+         </children>
+      </VBox>
+      <TableView fx:id="tvActivity" layoutX="241.0" layoutY="203.0" onMouseClicked="#handleMouseAction" prefHeight="252.0" prefWidth="479.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="48.0" text="Id" />
+          <TableColumn fx:id="colTitleActivity" prefWidth="85.0" text="Titre" />
+            <TableColumn fx:id="colAdressActivity" prefWidth="83.0" text="Adresse" />
+            <TableColumn fx:id="colDescriptionActivity" minWidth="0.0" prefWidth="124.0" text="Description" />
+            <TableColumn fx:id="colPriceActivity" minWidth="5.0" prefWidth="126.0" text="Prix" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAjouter" layoutX="22.0" layoutY="418.0" mnemonicParsing="false" onAction="#addActivity" prefHeight="25.0" prefWidth="94.0" text="Ajouter" />
+      <Button fx:id="btnModifier" layoutX="22.0" layoutY="455.0" mnemonicParsing="false" onAction="#editActivity" prefHeight="25.0" prefWidth="94.0" text="Modifier" />
+      <Button fx:id="btnSupprimer" layoutX="22.0" layoutY="490.0" mnemonicParsing="false" onAction="#deleteActivity" prefHeight="25.0" prefWidth="94.0" text="Supprimer" />
+      <Label layoutX="218.0" layoutY="14.0" lineSpacing="1.0" text="Gestion des activitées" textAlignment="CENTER" textFill="#67678a" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="93.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/delete.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="93.0" layoutY="460.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/edit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="93.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/add.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
